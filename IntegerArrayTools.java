@@ -101,7 +101,61 @@ public class IntegerArrayTools
     return sum;
   }
   
+  public int getMax ()
+  {
+    int maximum = arrayData[0];
+    for (int i = 0; i < arrayCount; i++)
+    {
+      if (arrayData[i] > maximum)
+      {
+        maximum = arrayData[i];
+      }
+    }
+    return maximum;
+  }
   
+  public int getMaxIndex ()
+  {
+    int maximum = arrayData[0];
+    int index = 0;
+    for (int i = 0; i < arrayCount; i++)
+    {
+      if (arrayData[i] > maximum)
+      {
+        maximum = arrayData[i];
+        index = i;
+      }
+    }
+    return index;
+  }
+  
+  public int getMin ()
+  {
+    int minimum = arrayData[0];
+    for (int i = 0; i < arrayCount; i++)
+    {
+      if (arrayData[i] < minimum)
+      {
+        minimum = arrayData[i];
+      }
+    }
+    return minimum;
+  }
+  
+  public int getMinIndex ()
+  {
+    int minimum = arrayData[0];
+    int index = 0;
+    for (int i = 0; i < arrayCount; i++)
+    {
+      if (arrayData[i] < minimum)
+      {
+        minimum = arrayData[i];
+        index = i;
+      }
+    }
+    return index;
+    }
   /** Tests the various array tools */
   public static void main (String[] args)
   {
@@ -113,16 +167,11 @@ public class IntegerArrayTools
     System.out.println ("The sum is " + myArray.sumArray());
     
     // Un-comment these lines one at a time after you have written the appropriate code
-//    System.out.println ("The largest item is " + myArray.getMax() ); 
-//    System.out.println ("The largest item is at index " + myArray.getMaxIndex());
+    System.out.println ("The largest item is " + myArray.getMax() ); 
+    System.out.println ("The largest item is at index " + myArray.getMaxIndex());
 
-//    System.out.println ("The smallest item is " + myArray.getMin() );
-//    System.out.println ("The smallest item is at index " + myArray.getMinIndex());
+    System.out.println ("The smallest item is " + myArray.getMin() );
+    System.out.println ("The smallest item is at index " + myArray.getMinIndex());
     
   }
 }
-    
-    
-  
-  
-         
