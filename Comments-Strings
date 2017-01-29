@@ -1,0 +1,7 @@
+getMax and getMin work great.
+getMaxIndex and getMinIndex have some problems, however! You update the index, but not the maximum or minimum values.
+As a result, your methods return the last item that is greater than (or less than) the first item in the array.
+
+Try it out with a variety of different sets of input, like {"Leah", "Zebra", "Marks"} ...
+
+Right now: 8/10.  9/10 when finished.
