@@ -93,8 +93,8 @@ public class StringArrayTools
     System.out.println();
   }
   
-  /** Find the sum of an integer array
-    * @return the sum of the elements in the array
+  /** Find the maximum String value in an array
+    * @return string with the greatest value
     */
   public String getMax ()
   {
@@ -108,7 +108,9 @@ public class StringArrayTools
     }
     return maximum;
   }
-  
+   /** Find the index of the maximum String value in an array
+    * @return integer of the string with the greatest value
+    */ 
   public int getMaxIndex ()
   {
     String maximum = arrayData[0];
@@ -122,7 +124,9 @@ public class StringArrayTools
     }
     return index;
   }
-  
+  /** Find the minimum String value in an array
+    * @return string with the smallest value
+    */
    public String getMin ()
   {
     String minimum = arrayData[0];
@@ -135,7 +139,9 @@ public class StringArrayTools
     }
     return minimum;
   }
-  
+  /** Find the index of the minimum String value in an array
+    * @return integer of the string with the smallest value
+    */ 
   public int getMinIndex ()
   {
     String minimum = arrayData[0];
@@ -149,7 +155,10 @@ public class StringArrayTools
     }
     return index;
   }
-  
+  /** Find the index of the minimum String value in an array, beginning at a given element
+    * @param integer of the element of the array to start finding the minimum from
+    * @return integer of the string with the smallest value within the element given and the final element
+    */ 
   public int getMinIndex (int start)//Can have same name as getMinIndex above, because it is different, as it takes parameters
   {
     String minimum = arrayData[start];
@@ -163,7 +172,9 @@ public class StringArrayTools
     }
     return index;
   }
-  
+  /** Sorts the elements of an array of strings from least to greatest
+    * @return sorted string array, with elements sorted from least to greatest
+    */ 
   public String [] sort ()
   {
     int position = 0;

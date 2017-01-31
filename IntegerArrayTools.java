@@ -100,7 +100,9 @@ public class IntegerArrayTools
       sum = sum + arrayData[i];
     return sum;
   }
-  
+  /** Find the maximum integer in an array
+   * @return the greatest integer in an array
+   */
   public int getMax ()
   {
     int maximum = arrayData[0];
@@ -113,7 +115,9 @@ public class IntegerArrayTools
     }
     return maximum;
   }
-  
+  /** Find the index of the maximum integer in an array
+   * @return the index of the greatest integer in an array
+   */
   public int getMaxIndex ()
   {
     int maximum = arrayData[0];
@@ -128,7 +132,9 @@ public class IntegerArrayTools
     }
     return index;
   }
-  
+  /** Find the minimum integer in an array
+   * @return the smallest integer in an array
+   */
   public int getMin ()
   {
     int minimum = arrayData[0];
@@ -141,7 +147,9 @@ public class IntegerArrayTools
     }
     return minimum;
   }
-  
+  /** Find the index of the minimum integer in an array
+   * @return the index of the smallest integer in an array
+   */
   public int getMinIndex ()
   {
     int minimum = arrayData[0];
