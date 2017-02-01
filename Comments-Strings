@@ -5,3 +5,6 @@ As a result, your methods return the last item that is greater than (or less tha
 Try it out with a variety of different sets of input, like {"Leah", "Zebra", "Marks"} ...
 
 Right now: 8/10.  9/10 when finished.
+
+Update Feb.1 : Looks like you updated the file, but maybe you uploaded an earlier version.
+  It still works the same as before (you don't update maximum/minimum, so you're not searching properly)
